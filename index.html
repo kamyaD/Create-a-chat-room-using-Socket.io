@@ -24,12 +24,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>
     $(function (){
-        var socket = io('/my-namespace');
-        socket.on('hi',function(data) {
-            document.body.innerHTML = '';
-            document.write(data);
-        });
-        
+  
         var socket = io();
         $('form').submit(function(e){
             e.preventDefault();
